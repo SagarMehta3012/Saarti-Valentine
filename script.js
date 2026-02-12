@@ -3,7 +3,7 @@
    Place images as: images/photo1.jpg ... photo20.jpg
    Place songs as:  songs/song1.mp3 ... song20.mp3
    ========================= */
-   const TOTAL = 20;
+   const TOTAL = 8;
    const images = Array.from({length: TOTAL}, (_,i) => `photos/photo${i+1}.jpg`);
    const songs  = Array.from({length: TOTAL}, (_,i) => `songs/song${i+1}.mp3`);
    
