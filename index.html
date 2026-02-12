@@ -1,0 +1,75 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Aarti ❤️ Sagar — Home</title>
+
+  <!-- Inter font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- LOGIN / ENTRY -->
+  <div id="loginScreen" class="center-screen">
+    <div class="card glass elevated" role="dialog" aria-labelledby="welcomeTitle">
+      <h1 id="welcomeTitle" class="brand">Sagar <span class="sep">♥</span> Aarti</h1>
+      <p class="muted">Enter the special password to open your surprise</p>
+
+      <label class="sr-only" for="passwordInput">Password</label>
+      <input id="passwordInput" class="input" type="password" placeholder="Password" />
+
+      <div class="actions">
+        <button id="loginBtn" class="btn primary">Enter</button>
+      </div>
+
+      <p id="errorMsg" class="error" aria-live="polite"></p>
+      <p class="hint muted">Hint: try something about us (case-sensitive)</p>
+    </div>
+  </div>
+
+  <!-- MAIN SITE (hidden until login) -->
+  <div id="mainContent" style="display:none;">
+    <header class="nav">
+      <div class="nav-left brand-small">Sagar <span class="sep">♥</span> Aarti</div>
+      <nav class="nav-right">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="playlist.html">Memories</a>
+        <a class="nav-link" href="message.html">Special</a>
+      </nav>
+    </header>
+
+    <main class="container">
+      <section class="hero glass elevated">
+        <h2>Our Love Story</h2>
+        <p class="lead">Since <strong>2018</strong> — married for life from <strong>2025</strong>. A little site made with all my heart.</p>
+        <div class="cta-row">
+          <a class="btn primary" href="playlist.html">Open Memories</a>
+          <a class="btn neutral" href="message.html">Read Special</a>
+        </div>
+      </section>
+
+      <section class="cards grid">
+        <article class="card glass">
+          <h3>Slideshow</h3>
+          <p>Full-screen photos that capture our best moments.</p>
+        </article>
+
+        <article class="card glass">
+          <h3>Playlist</h3>
+          <p>Click an image on the Memories page to play a song.</p>
+        </article>
+
+        <article class="card glass">
+          <h3>Surprise</h3>
+          <p>Read the message — one more question will appear at the end.</p>
+        </article>
+      </section>
+    </main>
+
+    <footer class="footer">Made with ♥ by Sagar — 2018 → 2025</footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
